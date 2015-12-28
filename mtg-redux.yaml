@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mtg-redux
+spec:
+  containers:
+    - name: mtg-redux
+      image: asia.gcr.io/api-project-543499001283/mtg-front
+      imagePullPolicy: Always
+      ports:
+        - containerPort: 3000
+          hostPort: 80
